@@ -48,7 +48,8 @@
 				<div class="form-group">
 					<label for="Correo Institucional" class="col-sm-2 control-label">Correo Institucional</label>
 					<div class="col-sm-10">
-						<input type="email" class="form-control" id="Email_ins" name="Email_ins" placeholder="Email" required>
+						<input type="text" class="form-control" id="Email_ins" name="Email_ins" placeholder="Email" required>
+						<input type="hidden" value = "@ucatolica.edu.co" name="Correo">
 					</div>
 				</div>
 			

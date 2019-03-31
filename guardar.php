@@ -6,12 +6,13 @@
 	$Nombres = $_POST['Nombres'];
 	$Apellidos = $_POST['Apellidos'];
 	$Email_ins = $_POST['Email_ins'];
+	$correo = $_POST['Correo'];
 	$Tipo_user = $_POST['Tipo_user'];
 	$Tipo_pross = $_POST['Tipo_pross'];
 	$Contraseña = $_POST['Contraseña'];
 
 	
-	$sql = "INSERT INTO Usuarios (idUsuarios, Nombres, Apellidos, Email_ins, Tipo_user, Tipo_pross, Contraseña) VALUES ('$idUsuarios', '$Nombres', '$Apellidos', '$Email_ins', '$Tipo_user','$Tipo_pross', '$Contraseña')";
+	$sql = "INSERT INTO Usuarios (idUsuarios, Nombres, Apellidos, Email_ins, Tipo_user, Tipo_pross, Contraseña) VALUES ('$idUsuarios', '$Nombres', '$Apellidos', '$Email_ins$correo', '$Tipo_user','$Tipo_pross', '$Contraseña')";
 	$resultado = $mysqli->query($sql);
 
 ?>
